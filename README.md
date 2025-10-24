@@ -9,6 +9,7 @@ These plugins are meant as a demo and proof-of-concept. They do not aim to be co
 | Fluffy Theme           | Simple "Theme" with silly colors and font.                                                                            | Yes      |
 | Legal Pages            | Adds some legal pages (like an Imprint) to the panel                                                                  | Yes      |
 | Mclogs Uploader        | Adds a button to the console for uploading console logs to mclo.gs                                                    | Yes      |
+| Minecraft Modrinth     | Allows to easily download mods & plugins from modrinth                                                                | Yes      |
 | Pirate Language        | Adds a new Pirate like language to the panel. (only Admin Dashboard, Profile & Health page)                           | Yes      |
 | Player Counter         | Adds a simple player counter to the console. Uses a GameQ fork.                                                       | Yes      |
 | Pterodactyl Theme      | Simple "Theme" with Pterodactyl like colors and font.                                                                 | Yes      |
