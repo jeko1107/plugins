@@ -34,22 +34,17 @@ class SubdomainsPlugin implements HasPluginSettings, Plugin
     public function getSettingsForm(): array
     {
         return [
-            TextInput::make('email')
-                ->label('Cloudflare E-Mail')
+            TextInput::make('token')
+                ->label('Cloudflare API Token')
                 ->required()
-                ->default(fn () => config('subdomains.email')),
-            TextInput::make('key')
-                ->label('Cloudflare API Key')
-                ->required()
-                ->default(fn () => config('subdomains.key')),
+                ->default(fn () => config('subdomains.token')),
         ];
     }
 
     public function saveSettings(array $data): void
     {
         $this->writeToEnvironment([
-            'CLOUDFLARE_EMAIL' => $data['email'],
-            'CLOUDFLARE_KEY' => $data['key'],
+            'CLOUDFLARE_TOKEN' => $data['token'],
         ]);
 
         Notification::make()

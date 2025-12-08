@@ -18,10 +18,7 @@ class SubdomainsPluginProvider extends ServiceProvider
         Http::macro(
             'cloudflare',
             fn () => Http::acceptJson()
-                ->withHeaders([
-                    'X-Auth-Email' => config('subdomains.email'),
-                    'X-Auth-Key' => config('subdomains.key'),
-                ])
+                ->withToken(config('subdomains.token'))
                 ->timeout(5)
                 ->connectTimeout(1)
                 ->baseUrl('https://api.cloudflare.com/client/v4/')

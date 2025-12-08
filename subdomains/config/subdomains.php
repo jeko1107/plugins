@@ -1,6 +1,5 @@
 <?php
 
 return [
-    'email' => env('CLOUDFLARE_EMAIL'),
-    'key' => env('CLOUDFLARE_KEY'),
+    'token' => env('CLOUDFLARE_TOKEN'),
 ];
